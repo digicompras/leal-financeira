@@ -1,0 +1,31 @@
+<html>
+<head>
+<title>SMS</title>
+</head>
+<body>
+<font face="Verdana" size="2"> Envie um torpedo para a Claro ou para a Oi gratuitamente.
+<form method="post" action="torpedo.php">
+Destinatário (DDD + Telefone): <br>
+0
+<input name="ddd" type="text" size="3" maxlength="2"> 
+<input name="tel" type="text" maxlength="8">
+<br><br>
+Operadora de destino: 
+  <label>
+  <select name="select">
+    <option value="claro">Claro</option>
+    <option value="oi">Oi</option>
+  </select>
+  </label>
+
+<p><br>
+  Mensagem (max. 255 caracteres): </p>
+  <label>
+  <input name="msg" type="text" id="msg" value="" size="100" maxlength="255">
+  </label>
+
+<p><input type="submit" value="Enviar torpedo"></p>
+</form>
+</font>
+</body>
+</html>

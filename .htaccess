@@ -1,0 +1,24 @@
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+#RewriteBase /
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . index.php [L]
+</IfModule>
+AddType application/vnd.ms-excel xla xlc xlm xls xlt xlw
+AddType application/vnd.ms-excel.addin.macroenabled.12 xlam
+AddType application/vnd.ms-excel.sheet.binary.macroenabled.12 xlsb
+AddType application/vnd.ms-excel.sheet.macroenabled.12 xlsm
+AddType application/vnd.ms-excel.template.macroenabled.12 xltm
+AddType application/vnd.openxmlformats-officedocument.spreadsheetml.sheet xlsx
+
+# php -- BEGIN cPanel-generated handler, do not edit
+# Defina o pacote “alt-php51” como a linguagem padrão de programação “PHP”.
+<IfModule mime_module>
+  AddHandler application/x-httpd-alt-php51 .php .php5 .phtml
+</IfModule>
+# php -- END cPanel-generated handler, do not edit
