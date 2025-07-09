@@ -143,7 +143,7 @@ while ($linha = mysql_fetch_row($res)) {
 
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
-		<meta name="description" content="Leal soluções financeiras">
+		<meta name="description" content="<? echo $nfantasia ?>">
 
 		<meta name="keywords" content="crédito consignado, aposentados e pensionistas, financiamento, refinanciamento, cartão de crédito, crédito pessoal, Bradesco, Daycoval, Itaú, Pan, Bonsucesso, BGN, Safra, BV financeira, OMNI financeira" />
 
@@ -159,7 +159,7 @@ while ($linha = mysql_fetch_row($res)) {
 
 		<meta name="author" content="">
 
-		<title><? echo "$titulo_index"; ?></title>
+		<title><? echo "$nfantasia"; ?></title>
 
 		<!-- Bootstrap Core CSS -->
 
@@ -265,9 +265,10 @@ while ($linha = mysql_fetch_row($res)) {
 
 	<div class="container">
 
+		<span class="navbar-header"><a class="navbar-brand" href="index.php#aviso_de_filiais"><img width="180" height="90" src="../logo/logotipo.jpg" alt="company logo" /></a></span>
 		<div class="navbar-header">
 
-			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+		  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
 
 				<span class="sr-only">Toggle navigation</span>
 
@@ -278,9 +279,6 @@ while ($linha = mysql_fetch_row($res)) {
 				<span class="icon-bar"></span>
 
 			</button>
-
-			<a class="navbar-brand" href="index.php#aviso_de_filiais"><img width="180" height="90" src="images/logo.jpg" alt="company logo" /></a>
-
 		</div>
 
 		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -1175,16 +1173,19 @@ while ($linha = mysql_fetch_row($res)) {
 
 								<span class="text"><img src='images/whatsapp.png' border='0' width='30'></span>
 
-								<span class="text"><? echo "<a href='http://wa.me/551637222400' target='_blank'>+51 (16) 3722-2400</a>"; ?></span>
+								<span class="text"><? echo "<a href='http://wa.me/551634095731' target='_blank'>+51 (16) 3409-5731</a>"; ?></span>
 							</div>
 
 							<div class="form-group">
 
 								<i class="fa fa-2x fa-phone"></i>
 								<span class="text"><? echo "+51 (16) 3409-5731"; ?></span>
-								<i class="fa fa-2x fa-phone"></i>
+								
+								
+								<span class="text"><img src='images/whatsapp.png' border='0' width='30'></span>
 
-								<span class="text">+51 (16) 99369-1349</span>
+								
+								<span class="text"><? echo "<a href='http://wa.me/5516993691349' target='_blank'>+51 (16) 99369-1349</a>"; ?></span>
 
 							</div>
 
@@ -1216,29 +1217,27 @@ while ($linha = mysql_fetch_row($res)) {
 
 <br>
 
-<table width="100%" border="0" align="center">
+<table width="70%" border="0" align="center">
 	<tbody>
 		<tr>
-			<td colspan="3" align="center"><strong class="fa-3x">
-					Siga-nos
-				</strong>
-				<ul>
-					<?
+			<td width="34%" rowspan="2" align="center"><a href="index.php#aviso_de_filiais"><img width="300" height="160" src="../logo/logo.jpg" alt="company logo" /></a></td>
+			<td align="center"><strong class="fa-3x">Siga-nos </strong>
+              <ul>
+                <?
 
-					echo "<li>
-							<a target='_blank' href='https://www.facebook.com/Leal-Solu%C3%A7%C3%B5es-Financeiras-529238700581953/?fref=ts'><i class='fa fa-facebook social-icons'></i></a>	";
+					echo "<li>";
+					
+					echo "<a href='https://www.facebook.com/lealsolucoesfinanceiras?rdid=qttqoZT2pB3tCDcF#' target='_blank'><img src='../../raiz/images/facebook-13.png' border='0' width='30'></a> ";
 
-					echo "<img width='50' height='90' src='images/espaco_branco.jpg' >";
+					
 
-					echo "<a href='https://instagram.com/lealsolucoesfinanceiras?igshid=ZDdkNTZiNTM' target='_blank'><img src='../../raiz/images/instagram-logo.png' border='0' width='30'></a>
+					echo "<a href='https://www.instagram.com/lealsolucoes_?utm_source=qr&igsh=MW9nbzg1YnpsNHd5OQ==' target='_blank'><img src='../../raiz/images/instagram-logo.png' border='0' width='30'></a>
 							</li>";
 
 					?>
-				</ul>
-			</td>
+            </ul></td>
 		</tr>
 		<tr>
-			<td width="34%" align="right" valign="top"><a href="index.php#aviso_de_filiais"><img width="180" height="90" src="images/logo.jpg" alt="company logo" /></a></td>
 			<td width="41%" align="center">
 				<?
 				echo "Razao Social: $razaosocial <br>";
@@ -1248,7 +1247,6 @@ while ($linha = mysql_fetch_row($res)) {
 				echo "CEP: $cep <br>";
 
 				?></td>
-			<td width="25%" align="center" scope="col">&nbsp;</td>
 		</tr>
 
 	</tbody>
